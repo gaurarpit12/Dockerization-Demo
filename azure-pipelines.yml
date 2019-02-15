@@ -32,7 +32,7 @@ steps:
 # nuget pack $(ProjectPath) -Symbols -Properties Configuration=$(ConfigurationName) -IncludeReferencedProjects
 
 - script: |
-    nuget.exe pack '**/*.csproj' -Symbols -Properties Configuration=$(buildConfiguration) -IncludeReferencedProjects
+     nuget pack '**/*.csproj' -Symbols -Properties Configuration=$(buildConfiguration) -IncludeReferencedProjects
 
 # - script: | 
 #      nuget.exe push -Source "BuildArtifacts-DemoFeed" -ApiKey AzureDevOps my_package.nupkg  -MSBuildVersion 14.0
