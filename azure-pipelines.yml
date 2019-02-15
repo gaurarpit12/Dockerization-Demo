@@ -23,11 +23,15 @@ steps:
 #     testResultsFiles: '**/*.trx'
 
 
-# - task: NuGetCommand@2
-#   inputs:
-#     buildProperties: MSBuildVersion=15.0
-#     command: pack
-#     packagesToPack: '**/*.csproj'
+- task: NuGetCommand@2
+  inputs:
+    command: pack
+    packagesToPack: '**/*.csproj'
+    configuration: 'release'
+    nobuild: 'true'
+  
+    # buildProperties: 'MSBuildVersion=15.0'
+    
 
 # nuget pack $(ProjectPath) -Symbols -Properties Configuration=$(ConfigurationName) -IncludeReferencedProjects
 
