@@ -22,6 +22,15 @@ steps:
 #     testRunner: VSTest
 #     testResultsFiles: '**/*.trx'
 
+
+- task: NuGetCommand@2
+  inputs:
+    command: pack
+    packagesToPack: '**/*.csproj'
+
+- script: | 
+     nuget.exe push -Source "BuildArtifacts-DemoFeed" -ApiKey AzureDevOps my_package.nupkg
+
 - task: PublishBuildArtifacts@1
 
 # - task: PublishBuildArtifacts@1
@@ -30,5 +39,3 @@ steps:
 #     artifactName: drop
 
 
-# - script: |
-#     nuget.exe push -Source "BuildArtifacts-DemoFeed" -ApiKey AzureDevOps my_package.nupkg
