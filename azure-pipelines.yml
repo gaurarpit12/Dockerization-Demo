@@ -4,9 +4,9 @@
 # pool:
 #   vmImage: 'Ubuntu 16.04'
 
-- job: Windows
-  pool:
-    vmImage: 'vs2017-win2016'
+# - job: Windows
+pool:
+   vmImage: 'vs2017-win2016'
   
 variables:
   buildConfiguration: 'Release'
