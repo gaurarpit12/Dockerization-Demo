@@ -10,8 +10,11 @@ variables:
 steps:
 - script: |
     dotnet build --configuration $(buildConfiguration)
-#    dotnet test dotnetcore-tests --configuration $(buildConfiguration) --logger trx
     dotnet publish --configuration $(buildConfiguration) --output $BUILD_ARTIFACTSTAGINGDIRECTORY
+
+
+#    dotnet test dotnetcore-tests --configuration $(buildConfiguration) --logger trx
+    
 
 # - task: PublishTestResults@2
 #   condition: succeededOrFailed()
@@ -20,6 +23,7 @@ steps:
 #     testResultsFiles: '**/*.trx'
 
 - task: PublishBuildArtifacts@1
+
 # - task: PublishBuildArtifacts@1
 #   inputs:
 #     pathtoPublish: '$(Build.ArtifactStagingDirectory)'
