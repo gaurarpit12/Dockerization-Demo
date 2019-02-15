@@ -25,9 +25,10 @@ steps:
 
 - task: NuGetCommand@2
   inputs:
+    buildProperties: MSBuildVersion=15.0
     command: pack
     packagesToPack: '**/*.csproj'
-    buildProperties: MSBuildVersion=15.0
+    
 
 # - script: | 
 #      nuget.exe push -Source "BuildArtifacts-DemoFeed" -ApiKey AzureDevOps my_package.nupkg  -MSBuildVersion 14.0
