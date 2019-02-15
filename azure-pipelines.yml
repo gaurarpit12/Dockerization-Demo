@@ -29,8 +29,7 @@ steps:
     packagesToPack: '**/*.csproj'
     configuration: 'release'
     nobuild: 'true'
-  
-    # buildProperties: 'MSBuildVersion=15.0'
+    buildProperties: 'MSBuildVersion=15.0'
     
 
 # nuget pack $(ProjectPath) -Symbols -Properties Configuration=$(ConfigurationName) -IncludeReferencedProjects
