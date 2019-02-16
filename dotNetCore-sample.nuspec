@@ -1,0 +1,15 @@
+<?xml version="1.0">
+<package>
+	<metadata>
+		<id>Demo.AspNet.Core.App</id>
+		<version>$version$</version>
+		<title>Demo AspNet Core App</title>
+		<authors>arpitgaur.co</authors>
+		<owners>arpitgaur.co</owners>
+		<projectUrl>https://arpitgaur.co</copyright>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>This creates a nuget package file</description>
+		<releaseNotes>It is the first major version</releaseNotes>
+		<copyright>Copyright 2019</copyright>
+	</metadata>
+</package>
