@@ -6,7 +6,7 @@
 		<title>Demo AspNet Core App</title>
 		<authors>arpitgaur.co</authors>
 		<owners>arpitgaur.co</owners>
-		<projectUrl>https://arpitgaur.co</copyright>
+		<projectUrl>https://arpitgaur.co</projectUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>This creates a nuget package file</description>
 		<releaseNotes>It is the first major version</releaseNotes>
